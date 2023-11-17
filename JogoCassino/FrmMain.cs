@@ -94,7 +94,7 @@ namespace JogoCassino
             int totalGiros = Convert.ToInt16(btn_totalGiros.Text);
             if (totalGiros <= 0)
             {
-                MessageBox.Show("Não existe giros disponivel, deseja comprar giros ?");
+                MessageBox.Show("Não existe giros disponivel...");
                 return;
             }
             else
