@@ -19,6 +19,7 @@ namespace JogoCassino
 
         public void IniciarImage()
         {
+
             try
             {
                 string img_one = Environment.CurrentDirectory + @"\Img\Diamante.png";
@@ -28,10 +29,11 @@ namespace JogoCassino
                 imgOne.Image = Image.FromFile(img_one);
                 ImgTwo.Image = Image.FromFile(img_two);
                 ImgTree.Image = Image.FromFile(img_tree);
+
             }
             catch (Exception ex)
             {
-                MsgInfo.Show("Erro ao carregar as imgens principal, verifique!", "Aviso\n" + ex.Message);
+                MsgInfo.Show("Erro ao carregar as imagens principal, verifique!", "Aviso\n" + ex.Message);
             }
         }
 
